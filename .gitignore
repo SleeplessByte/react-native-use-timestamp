@@ -1,0 +1,6 @@
+node_modules
+
+index.*
+!index.ts
+!index.test.tsx
+tsconfig.tsbuildinfo

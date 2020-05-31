@@ -1,0 +1,43 @@
+{
+  "name": "react-native-use-timestamp",
+  "version": "1.0.0",
+  "description": "Hooks that re-renders every x milliseconds and returns the current timestamp",
+  "main": "index.cjs.js",
+  "types": "index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn build:main && yarn build:dts",
+    "build:main": "yarn tsc --module commonjs && move .\\index.js .\\index.cjs.js",
+    "build:dts": "yarn tsc --declaration --declarationMap --emitDeclarationOnly",
+    "prepublish": "yarn build"
+  },
+  "peerDependencies": {
+    "react": ">= 16.8",
+    "react-native": "*"
+  },
+  "dependencies": {
+    "use-timestamp": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@babel/preset-typescript": "^7.10.1",
+    "@types/react": "~16.9.35",
+    "@types/react-native": "~0.61.23",
+    "@typescript-eslint/eslint-plugin": "^2.34.1-alpha.2",
+    "@typescript-eslint/parser": "^2.34.1-alpha.2",
+    "eslint": "^6.8.0",
+    "eslint-config-universe": "^3.0.1",
+    "prettier": "^2.0.5",
+    "react": "~16.9.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-37.0.1.tar.gz",
+    "typescript": "~3.9.3"
+  },
+  "files": [
+    "index.cjs.js",
+    "index.ts",
+    "index.d.ts",
+    "index.d.ts.map"
+  ]
+}

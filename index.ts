@@ -1,13 +1,13 @@
-import { useState, useEffect } from 'react';
-import { InteractionManager } from 'react-native';
-import { getCurrentTime } from 'use-timestamp';
+import { useState, useEffect } from "react";
+import { InteractionManager } from "react-native";
+import { getCurrentTime } from "use-timestamp";
 
 export {
   getCurrentTime,
   useTimestamp,
   setTimeshift,
   setTime,
-} from 'use-timestamp';
+} from "use-timestamp";
 
 export function useInaccurateTimestamp({ every }: { every: number }): number {
   const [timestamp, setTimestamp] = useState(() => getCurrentTime());

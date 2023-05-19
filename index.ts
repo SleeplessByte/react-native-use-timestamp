@@ -14,7 +14,6 @@ export function useInaccurateTimestamp({ every }: { every: number }): number {
 
   useEffect(() => {
     let active = true;
-
     // Doesn't update the timestamp until interactions are done
     const timeout = setTimeout(() => {
       InteractionManager.runAfterInteractions(
